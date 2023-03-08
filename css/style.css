@@ -1,0 +1,76 @@
+
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "article article article"
+    "nav ads misc"
+    "footer footer footer";
+  grid-template-rows: 10vh 50vh 30vh 10vh;  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+header, footer, article, nav, div {
+  padding: 1.2em;
+  background: gold;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;    
+  background: url("../Images/fashion.jpeg") center;  
+  background-size: cover;
+  color: white;
+ 
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#mainMisc {
+  grid-area: misc;
+}  
+#siteAds { 
+  grid-area: ads; 
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "misc"
+      "footer";
+    grid-template-rows: 10vh 50vh 20vh 20vh 20vh 10vh;  
+    grid-template-columns: 1fr;
+ }
+}
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 1px;
+  align-items: start;
+  justify-items: center;
+  margin: auto;
+  width: 504px;
+  }
+.grid img {
+  max-width: 100%;
+}
+.grid img:nth-child(2) {
+  grid-column: span 3;
+  grid-row: span 4;
+  }
+  @media(max-length){
+    
+  }
+
+  
