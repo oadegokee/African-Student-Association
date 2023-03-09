@@ -21,7 +21,8 @@ header, footer, article, nav, div {
   grid-area: header;
   }
 #pageFooter {
-  grid-area: footer;
+  grid-area: footer; 
+  
   }
 #mainArticle { 
   grid-area: article;    
