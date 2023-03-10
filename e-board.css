@@ -1,0 +1,94 @@
+#grid {
+    display: grid;
+    grid-template-rows: 10vh 26vh 26vh 26vh 10vh;  
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+#grid > div {
+    color: white;
+    font-size: 4vw;
+    padding: 10px;
+    background: gold;
+}
+#grid > div:nth-child(1) {
+    grid-column: span 3;
+}
+#grid > div:nth-child(2) {
+    grid-column: span 1;
+}
+#grid > div:nth-child(3) {        
+    grid-column: span 2;
+}
+#grid > div:nth-child(4) {
+    grid-column: span 2;
+}
+#grid > div:nth-child(5) {
+    grid-column: span 1;
+}
+#grid > div:nth-child(6) {
+    grid-row: span 1;
+}
+#grid > div:nth-child(7) {
+    grid-column: span 2;
+}
+#grid > div:nth-child(8) {
+    grid-column: span 3;
+}
+
+p{
+    font-size: large;
+    color: black;
+}
+
+#footer p{
+    margin: 7px;
+}
+
+#header p{
+    margin: 3px;
+}
+
+ul{
+    list-style-type: none;
+    background-color: white;
+    position: sticky; /*brings menu infront of grid*/
+    float: right;
+    top: 0;
+}
+
+ul li{
+    float: left;
+    margin: 0 10px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    padding: 10px 10px;
+}
+
+li a:hover{
+    content: '';
+    height: 3px;
+    background: aqua;
+    bottom: -9px;
+    transition: 0.5s;
+}
+
+/*li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rebeccapurple;
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    transition: 0.5s;
+}
+
+li a:hover::after{
+    width: 100%;
+}*/
