@@ -57,7 +57,8 @@ body {
 
 .image_display { 
   grid-area: image;    
-  background: url("../Images/fashion.jpeg") center;  
+  background: url("../Images/fashion.jpeg") ;  
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
