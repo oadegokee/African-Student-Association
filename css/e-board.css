@@ -1,94 +1,122 @@
-#grid {
+.grid {
     display: grid;
     grid-template-rows: 10vh 26vh 26vh 26vh 10vh;  
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
     height: 100vh;
     margin: 0;
 }
-#grid > div {
-    color: white;
+.grid > div {
+    color: black;
     font-size: 4vw;
     padding: 10px;
-    background: gold;
+    background-color: antiquewhite;
 }
-#grid > div:nth-child(1) {
+.grid > div:nth-child(1) {
     grid-column: span 3;
 }
-#grid > div:nth-child(2) {
+.grid > div:nth-child(2) {
     grid-column: span 1;
 }
-#grid > div:nth-child(3) {        
+.grid > div:nth-child(3) {        
     grid-column: span 2;
 }
-#grid > div:nth-child(4) {
+.grid > div:nth-child(4) {
     grid-column: span 2;
 }
-#grid > div:nth-child(5) {
+.grid > div:nth-child(5) {
     grid-column: span 1;
 }
-#grid > div:nth-child(6) {
+.grid > div:nth-child(6) {
     grid-row: span 1;
 }
-#grid > div:nth-child(7) {
+.grid > div:nth-child(7) {
     grid-column: span 2;
 }
-#grid > div:nth-child(8) {
+.grid > div:nth-child(8) {
     grid-column: span 3;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+.header p{
+    margin: 3px;
+}
+
+.logo{
+    float: left;
+}
+
+.name{
+    background-color: aqua;
+    float: left;
+    margin-left: 30px;
 }
 
 p{
     font-size: large;
     color: black;
+    margin-left: 100px;
 }
 
-#footer p{
-    margin: 7px;
-}
-
-#header p{
-    margin: 3px;
-}
-
-ul{
-    list-style-type: none;
-    background-color: white;
-    position: sticky; /*brings menu infront of grid*/
+.menu{
     float: right;
-    top: 0;
 }
 
 ul li{
+    position: sticky;
+    display: block;
     float: left;
-    margin: 0 10px;
+    background-color: aquamarine;
 }
 
 li a{
+    padding: 10px;
+    font-size: 20px;
     text-decoration: none;
     color: black;
-    font-size: large;
-    padding: 10px 10px;
 }
 
 li a:hover{
-    content: '';
-    height: 3px;
-    background: aqua;
-    bottom: -9px;
-    transition: 0.5s;
+    text-decoration: underline;
 }
 
-/*li a::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: rebeccapurple;
-    position: absolute;
-    left: 0;
-    bottom: -9px;
-    transition: 0.5s;
+.sabapic{
+    background: url("../Images/saba.jpeg");
+    background-size: cover;
 }
 
-li a:hover::after{
+.dianarapic{
+    background: url("../Images/dianara.jpeg");
+    background-size: cover;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer p{
+    margin: 7px;
+}
+
+.info{
+    flex-direction: column;
+    background-color: blue;
     width: 100%;
-}*/
+}
+
+.socials{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.socials img{
+    padding: 5px;
+}
+
