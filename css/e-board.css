@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .grid {
     display: grid;
     grid-template-rows: 10vh 26vh 26vh 26vh 10vh;  
@@ -40,10 +46,12 @@
 header{
     display: flex;
     flex-direction: row;
+
 }
 
 .header p{
     margin: 3px;
+    font-size: small;
 }
 
 .logo{
@@ -51,7 +59,7 @@ header{
 }
 
 .name{
-    background-color: aqua;
+    background-color: #8d5b4c;
     float: left;
     margin-left: 30px;
 }
@@ -70,18 +78,69 @@ ul li{
     position: sticky;
     display: block;
     float: left;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 li a{
     padding: 10px;
-    font-size: 20px;
+    font-size: small;
     text-decoration: none;
     color: black;
 }
 
 li a:hover{
     text-decoration: underline;
+}
+
+.dropdown {
+    visibility: collapse;
+}
+  
+#more:hover > .dropdown {
+    visibility: visible;
+}
+  
+.dropdown {
+    background-color: antiquewhite;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 2px lightgray;
+    border-radius: 5%;
+}
+  
+.dropdown li {
+    list-style-type: none;
+    padding: 0.2em;
+}
+  
+.dropdown li a {
+    color: black;
+    text-decoration: none;
+}
+  
+.dropdown li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.e-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.e-info p{
+    font-size: x-large;
+    padding-bottom: 10px;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.boardsocial{
+    display: flex;
+    flex-direction: row;
 }
 
 .sabapic{
@@ -97,6 +156,8 @@ li a:hover{
 .footer{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    background-color: #8d5b4c;
 }
 
 .footer p{
@@ -104,19 +165,42 @@ li a:hover{
 }
 
 .info{
-    flex-direction: column;
     background-color: blue;
     width: 100%;
+    padding: 10px;
+}
+
+#email {
+    color: white;
+    text-decoration: none;
+}
+
+#email:hover {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
 }
 
 .socials{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-end;
+    padding-right: 10px;
+}
+
+.socials p{
+    padding-top: 10px;
 }
 
 .socials img{
-    padding: 5px;
+    padding-bottom: 20px;
 }
 
+.media a{
+    padding: 10px;
+}
+
+.fb:hover, .ig:hover{
+    padding: 1px;
+}
