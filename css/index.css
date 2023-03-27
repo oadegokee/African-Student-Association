@@ -52,49 +52,6 @@ figcaption {
   font-size: 0.9em;
 }
 
-.footer {
-  grid-area: footer;
-  display: flex;
-  align-items: center;
-}
-
-#footer_left{
-  width: 100%;
-  padding: 10px;
-}
-
-#email {
-  color: white;
-  text-decoration: none;
-}
-
-#email:hover {
-  text-decoration: underline;
-  color: black;
-  cursor: pointer;
-}
-
-#footer_right {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding-right: 10px;
-}
-
-#footer_right p {
-  font-size: 0.9em;
-  padding-bottom: 5px;
-}
-
-#footer_contact a {
-  padding: 5px;
-}
-
-#facebook_logo:hover, #instagram_logo:hover{
-  padding: 1px;
-}
-
 
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {
