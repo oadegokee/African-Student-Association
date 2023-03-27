@@ -8,7 +8,6 @@
     display: grid;
     grid-template-rows: 10vh 26vh 26vh 26vh 10vh;  
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
     height: 100vh;
     margin: 0;
 }
@@ -16,7 +15,6 @@
     color: black;
     font-size: 4vw;
     padding: 10px;
-    background-color: antiquewhite;
 }
 .grid > div:nth-child(1) {
     grid-column: span 3;
@@ -43,10 +41,13 @@
     grid-column: span 3;
 }
 
+.header,.footer{
+    background-color: #8d5b4c;
+}
+
 header{
     display: flex;
     flex-direction: row;
-
 }
 
 .header p{
@@ -59,14 +60,13 @@ header{
 }
 
 .name{
-    background-color: #8d5b4c;
     float: left;
     margin-left: 30px;
 }
 
 p{
     font-size: large;
-    color: black;
+    color: white;
     margin-left: 100px;
 }
 
@@ -78,18 +78,18 @@ ul li{
     position: sticky;
     display: block;
     float: left;
-    /* background-color: aquamarine; */
 }
 
 li a{
     padding: 10px;
     font-size: small;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 li a:hover{
     text-decoration: underline;
+    color: black;
 }
 
 .dropdown {
@@ -127,15 +127,23 @@ li a:hover{
 .e-info{
     display: flex;
     flex-direction: row;
+    background-color: antiquewhite;
+    border-bottom: 0.2px solid black;
 }
 
 .e-info p{
-    font-size: x-large;
+    font-size: 25px;
     padding-bottom: 10px;
+    color: black;
 }
 
 .title{
     font-weight: bold;
+}
+
+.answers img{
+    padding-bottom: 30px;
+    margin-left: 10px;
 }
 
 .boardsocial{
@@ -157,7 +165,6 @@ li a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #8d5b4c;
 }
 
 .footer p{
@@ -165,7 +172,6 @@ li a:hover{
 }
 
 .info{
-    background-color: blue;
     width: 100%;
     padding: 10px;
 }
@@ -190,11 +196,8 @@ li a:hover{
 }
 
 .socials p{
-    padding-top: 10px;
-}
-
-.socials img{
-    padding-bottom: 20px;
+    font-size: 15px;
+    padding-top: 5px;
 }
 
 .media a{
@@ -204,3 +207,24 @@ li a:hover{
 .fb:hover, .ig:hover{
     padding: 1px;
 }
+
+/* @media all and(max-width: 575px){
+    body{
+        grid-template-rows: 10vh 26vh 26vh 26vh 10vh;  
+        grid-template-columns: 1fr;
+    }
+
+    .grid { 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-gap: 1px;
+        align-items: start;
+        justify-items: center;
+        margin: auto;
+        width: 504px;
+    }
+      
+    .e-info{
+        border-bottom: 0.2px solid black;
+    }
+} */
