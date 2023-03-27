@@ -8,11 +8,11 @@
     display: grid;
     grid-template-areas: 
         "header header header"
-        "e-info e-info e-info"
-        "e-info e-info e-info"
-        "e-info e-info e-info"
+        "e-info1 e-info1 e-info1"
+        "e-info2 e-info2 e-info2"
+        "e-info3 e-info3 e-info3"
         "footer footer footer";
-    grid-template-rows: 10vh 25vh 30vh 25vh 10vh;  
+    grid-template-rows: 10vh 27.5vh 27.5vh 27.5vh 10vh;  
     grid-template-columns: repeat(3, 1fr);
     height: 100vh;
     margin: 0;
@@ -47,105 +47,38 @@
     grid-column: span 3;
 }
 
-.e-info {
-    display: grid;
-
-}
-
-
-/* .header,.footer{
-    background-color: #8d5b4c;
-}
-
-header{
-    grid-area: header;
+.e-info1{
+    grid-area: e-info1;
     display: flex;
     flex-direction: row;
-}
-
-.header p{
-    margin: 3px;
-    font-size: small;
-}
-
-.logo{
-    float: left;
-}
-
-.name{
-    float: left;
-    margin-left: 30px;
-}
-
-p{
-    font-size: large;
-    color: white;
-    margin-left: 100px;
-}
-
-.menu{
-    float: right;
-}
-
-ul li{
-    position: sticky;
-    display: block;
-    float: left;
-}
-
-li a{
-    padding: 10px;
-    font-size: small;
-    text-decoration: none;
-    color: white;
-}
-
-li a:hover{
-    text-decoration: underline;
-    color: black;
-}
-
-.dropdown {
-    visibility: collapse;
-}
-  
-#more:hover > .dropdown {
-    visibility: visible;
-}
-  
-.dropdown {
-    background-color: antiquewhite;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 2px 2px lightgray;
-    border-radius: 5%;
-}
-  
-.dropdown li {
-    list-style-type: none;
-    padding: 0.2em;
-}
-  
-.dropdown li a {
-    color: black;
-    text-decoration: none;
-}
-  
-.dropdown li a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-} */
-
-.e-info{
-    grid-area: e-info;
-    /* display: flex;
-    flex-direction: row; */
     background-color: antiquewhite;
     border-bottom: 0.2px solid black;
+    width: 100vw;
+
 }
 
-.e-info p{
+.e-info2{
+    grid-area: e-info2;
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    border-bottom: 0.2px solid black;
+    justify-content: center;
+    width: 100vw;
+}
+
+.e-info3{
+    grid-area: e-info3;
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    border-bottom: 0.2px solid black;
+    width: 100vw;
+
+
+}
+
+.e-info1 p, .e-info2 p, .e-info3 p{
     font-size: 25px;
     padding-bottom: 10px;
     color: black;
@@ -153,6 +86,11 @@ li a:hover{
 
 .title{
     font-weight: bold;
+    margin-left: 100px;
+}
+
+.answers{
+    margin-left: 30px;
 }
 
 .answers img{
@@ -166,86 +104,16 @@ li a:hover{
 }
 
 .sabapic{
-    grid-area: image;
-    background: url("../Images/saba.jpeg");
-    background-size: cover;
+    grid-area: e-info1;
+    margin-left: 500px;
 }
 
 .dianarapic{
-    grid-area: image;
-    background: url("../Images/dianara.jpeg");
-    background-size: cover;
+    grid-area: e-info3;
+    margin-left: 500px;
 }
 
 .mayadapic{
-    grid-area: image;
+    grid-area: e-info2;
+    margin-right: 500px;
 }
-
-/* .footer{
-    grid-area: footer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.footer p{
-    margin: 7px;
-}
-
-.info{
-    width: 100%;
-    padding: 10px;
-}
-
-#email {
-    color: white;
-    text-decoration: none;
-}
-
-#email:hover {
-  text-decoration: underline;
-  color: black;
-  cursor: pointer;
-}
-
-.socials{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 10px;
-}
-
-.socials p{
-    font-size: 15px;
-    padding-top: 5px;
-}
-
-.media a{
-    padding: 10px;
-}
-
-.fb:hover, .ig:hover{
-    padding: 1px;
-} */
-
-/* @media all and(max-width: 575px){
-    body{
-        grid-template-rows: 10vh 26vh 26vh 26vh 10vh;  
-        grid-template-columns: 1fr;
-    }
-
-    .grid { 
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        grid-gap: 1px;
-        align-items: start;
-        justify-items: center;
-        margin: auto;
-        width: 504px;
-    }
-      
-    .e-info{
-        border-bottom: 0.2px solid black;
-    }
-} */
