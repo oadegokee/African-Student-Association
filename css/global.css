@@ -12,7 +12,7 @@
   .header {
     grid-area: header;
     display: flex;
-    font-size: 0.9em;
+    font-size: 5px;
     z-index: 1;
   }
   

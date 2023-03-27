@@ -8,11 +8,11 @@
     display: grid;
     grid-template-areas: 
         "header header header"
-        "image content content"
-        "content content image"
-        "image content content"
+        "e-info e-info e-info"
+        "e-info e-info e-info"
+        "e-info e-info e-info"
         "footer footer footer";
-    grid-template-rows: 10vh 26vh 26vh 26vh 10vh;  
+    grid-template-rows: 10vh 25vh 30vh 25vh 10vh;  
     grid-template-columns: repeat(3, 1fr);
     height: 100vh;
     margin: 0;
@@ -46,6 +46,12 @@
 .grid > div:nth-child(8) {
     grid-column: span 3;
 }
+
+.e-info {
+    display: grid;
+
+}
+
 
 /* .header,.footer{
     background-color: #8d5b4c;
@@ -132,9 +138,9 @@ li a:hover{
 } */
 
 .e-info{
-    grid-area: content;
-    display: flex;
-    flex-direction: row;
+    grid-area: e-info;
+    /* display: flex;
+    flex-direction: row; */
     background-color: antiquewhite;
     border-bottom: 0.2px solid black;
 }
