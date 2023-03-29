@@ -15,20 +15,35 @@ body {
   background: url("../Images/gallery_image16.jpg") ;  
   background-repeat: no-repeat;
   background-size: cover;
+  border-top: 5px solid black;
 }
 
 .about {
   grid-area: about;
-  display: flex;
   border-right: 10px solid black;
+  border-top: 10px solid black;
   padding-left: 15px;
   padding-right: 15px;
   background-color: antiquewhite;
 }
 
+.about h1 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 5px dotted black;
+}
+
+.about h2 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 5px;
+  border-bottom: 5px dotted black;
+}
 .about p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-stretch: expanded;
+  text-align: justify;
 }
 
 .logo_display {
