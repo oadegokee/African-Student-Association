@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: antiquewhite;
-    border-bottom: 0.2px solid black;
+    border-bottom: 1px solid black;
     width: 100vw;
 
 }
@@ -33,7 +33,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: antiquewhite;
-    border-bottom: 0.2px solid black;
+    border-bottom: 1px solid black;
     justify-content: center;
     width: 100vw;
 }
@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: antiquewhite;
-    border-bottom: 0.2px solid black;
+    border-bottom: 1px solid black;
     width: 100vw;
 
 
