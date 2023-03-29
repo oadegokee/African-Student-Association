@@ -1,0 +1,38 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "about image image"
+    "logo logo logo"
+    "footer footer footer";
+  grid-template-rows: 10vh 60vh 20vh 10vh;  
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+}  
+
+.image_display { 
+  grid-area: image;    
+  background: url("../Images/gallery_image16.jpg") ;  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  grid-area: about;
+  display: flex;
+  border-right: 10px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: antiquewhite;
+}
+
+.about p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-stretch: expanded;
+}
+
+.logo_display {
+  grid-area: logo;
+  border-top: 10px solid black;
+  background-color: antiquewhite;
+}
