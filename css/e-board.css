@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-.grid {
+body {
     display: grid;
     grid-template-areas: 
         "header header header"
@@ -12,39 +12,10 @@
         "e-info2 e-info2 e-info2"
         "e-info3 e-info3 e-info3"
         "footer footer footer";
-    grid-template-rows: 10vh 27.5vh 27.5vh 27.5vh 10vh;  
+    grid-template-rows: 10vh 27vh 27vh 27vh 10vh;  
     grid-template-columns: repeat(3, 1fr);
     height: 100vh;
     margin: 0;
-}
-.grid > div {
-    color: black;
-    font-size: 4vw;
-    padding: 10px;
-}
-.grid > div:nth-child(1) {
-    grid-column: span 3;
-}
-.grid > div:nth-child(2) {
-    grid-column: span 1;
-}
-.grid > div:nth-child(3) {        
-    grid-column: span 2;
-}
-.grid > div:nth-child(4) {
-    grid-column: span 2;
-}
-.grid > div:nth-child(5) {
-    grid-column: span 1;
-}
-.grid > div:nth-child(6) {
-    grid-row: span 1;
-}
-.grid > div:nth-child(7) {
-    grid-column: span 2;
-}
-.grid > div:nth-child(8) {
-    grid-column: span 3;
 }
 
 .e-info1{
@@ -79,6 +50,7 @@
 }
 
 .e-info1 p, .e-info2 p, .e-info3 p{
+    padding-top: 5px;
     font-size: 25px;
     padding-bottom: 10px;
     color: black;
@@ -106,14 +78,20 @@
 .sabapic{
     grid-area: e-info1;
     margin-left: 500px;
+    border-style:inset;
+    box-shadow: 2px 2px 5px black;
 }
 
 .dianarapic{
     grid-area: e-info3;
-    margin-left: 500px;
+    margin-left: 470px;
+    border-style:inset;
+    box-shadow: 2px 2px 5px black;
 }
 
 .mayadapic{
     grid-area: e-info2;
-    margin-right: 500px;
+    margin-right: 350px;
+    border-style:inset;
+    box-shadow: 2px 2px 5px black;
 }
