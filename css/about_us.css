@@ -31,23 +31,60 @@ body {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 5px dotted black;
 }
 
 .about h2 {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  padding: 5px;
+  padding: 10px;
   border-bottom: 5px dotted black;
+  font-style: italic;
 }
 .about p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: justify;
+  padding-top: 50px;
+  font-size: large;
 }
 
 .logo_display {
   grid-area: logo;
   border-top: 10px solid black;
   background-color: antiquewhite;
+  text-align: center;
+}
+
+.logo_display img {
+  display: inline-block;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.logo_display img#logo_2019 {
+  border-radius: 50%;
+  border: 5px solid black;
+
+  
+}
+.logo_display img#logo_2018 {
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: white;
+  
+}
+
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "about"
+      "image"
+      "logo"
+      "footer";
+    grid-template-rows: 10vh 30vh 40vh 40vh 10vh;  
+    grid-template-columns: 1fr;
+ }
 }
