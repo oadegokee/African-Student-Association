@@ -12,7 +12,7 @@ body {
 
 .image_display { 
   grid-area: image;    
-  background: url("../Images/gallery_image16.jpg") ;  
+  background: url("../images/gallery_image16.jpg") ;  
   background-repeat: no-repeat;
   background-size: cover;
   border-top: 5px solid black;
