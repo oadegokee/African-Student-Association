@@ -63,6 +63,10 @@
     text-decoration: underline;
     color: black;
   }
+
+  #more {
+    height: 10px;
+  }
   
   .dropdown {
     visibility: collapse;
