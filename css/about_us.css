@@ -52,8 +52,10 @@ body {
 .logo_display {
   grid-area: logo;
   border-top: 10px solid black;
+  border-bottom: 10px solid black;
   background-color: antiquewhite;
   text-align: center;
+
 }
 
 .logo_display img {
