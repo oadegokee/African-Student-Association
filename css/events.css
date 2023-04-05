@@ -15,7 +15,7 @@ body,html{
     grid-template-areas: 'header'
                          'two'
                           'footer';
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-rows: 12vh 76vh 12vh;
 }
 
 .two{

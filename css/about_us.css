@@ -5,7 +5,7 @@ body {
     "about image image"
     "logo logo logo"
     "footer footer footer";
-  grid-template-rows: 10vh 60vh 20vh 10vh;  
+  grid-template-rows: 12vh 58vh 18vh 12vh;  
   grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
 }  

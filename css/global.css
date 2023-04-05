@@ -97,6 +97,12 @@
     padding: 12px 8px;
   }
 
+  @media only screen and (max-width: 1024px) and (min-width: 900px) {
+    .header {
+      height: 15vh !important;
+    }
+  }
+
   @media only screen and (max-width: 600px) {
     nav {
       display: block;
@@ -111,6 +117,7 @@
 
     .nav li {
       padding: 10px 5px;
+      padding-top: 7px;
       font-size: 16px;
     }
 
@@ -133,10 +140,26 @@
 
   }
 
+  @media only screen and (max-width: 414px) {
+
+    .nav li {
+      padding: 12px 5px;
+      font-size: 16px;
+    }
+
+  }
+
+  @media only screen and (max-width: 393px) {
+    .nav li {
+      padding: 10px 5px;
+      font-size: 14px;
+    }
+  }
+
   @media only screen and (max-width: 375px) {
 
     .nav {
-      margin-top: 7px;
+      margin-top: 2px;
     }
 
     .nav li {

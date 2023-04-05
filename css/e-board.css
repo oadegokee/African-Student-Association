@@ -4,7 +4,7 @@ body {
         "header header header"
         "e-info e-info e-info"
         "footer footer footer";
-    grid-template-rows: 10vh 80vh 10vh;  
+    grid-template-rows: 12vh 76vh 12vh;  
     grid-template-columns: repeat(3, 1fr);
     height: 100vh;
     margin: 0;

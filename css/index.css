@@ -6,7 +6,7 @@ body {
     "image"
     "quote"
     "footer";
-  grid-template-rows: 10vh 80vh 40vh 10vh;  
+  grid-template-rows: 12vh 80vh 40vh 12vh;  
   grid-template-columns: 1fr;
 }  
 
@@ -68,12 +68,12 @@ body {
   margin: 0 auto;
 }
 .quotes {
-  max-width: 80%;
+  max-width: 90%;
   text-align: center;
 }
 
 .quote-text {
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: #333;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -86,7 +86,7 @@ body {
   padding-right: 10px;
 }
 
-@media all and (max-width: 665px) {
+@media all and (max-width: 800px) {
   .quotes {
     max-width: 90%;
     text-align: center;
@@ -98,20 +98,23 @@ body {
   .quote-source {
     font-size: 1em;
   }
-  
 }
 
-@media all and (max-width: 460px) {
-  .quotes {
-    max-width: 90%;
-    text-align: center;
-  }
 
+
+@media all and (max-width: 600px) {
   .quote-text {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .quote-source {
     font-size: 0.9em;
+  }
+
+  
+}
+@media all and (max-width: 570px) {
+  .image_display h2 {
+    font-size: 3.5em;
   }
 }
 
@@ -119,10 +122,7 @@ body {
   .image_display h2 {
     font-size: 3em;
   }
-  
-}
 
-@media all and (max-width: 375px) {
   .quote-text {
     font-size: 1em;
   }
@@ -130,11 +130,25 @@ body {
     font-size: 0.9em;
   }
 
+  
 }
 
-@media all and (max-width: 280px) {
+@media all and (max-width: 375px) {
   body {
     grid-template-rows: 12vh 80vh 55vh 12vh;  
+  }
+}
+
+@media all and (max-width: 250px) {
+  body {
+    grid-template-rows: 12vh 80vh 55vh 12vh;  
+  }
+
+  .quote-text {
+    font-size: 0.9em;
+  }
+  .quote-source {
+    font-size: 0.7em;
   }
 }
   
