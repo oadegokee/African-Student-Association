@@ -2,13 +2,12 @@
 body { 
   display: grid;
   grid-template-areas: 
-    "header header header"
-    "image image image"
-    "alum student member"
-    "footer footer footer";
-  grid-template-rows: 10vh 50vh 30vh 10vh;  
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 100vh;
+    "header"
+    "image"
+    "quote"
+    "footer";
+  grid-template-rows: 10vh 80vh 40vh 10vh;  
+  grid-template-columns: 1fr;
 }  
 
 .image_display { 
@@ -16,79 +15,126 @@ body {
   background: url("../images/fashion.jpeg") ;  
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.alum_quote, .student_quote, .member_quote{
-  color: black;
-  font-size: 0.9em;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image_display h2 {
+ color: white;
+ z-index: 1;
+}
+
+.image_display h2 {
+  font-size: 4em;
+  text-align: center;
+}
+
+.image_display button {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #3498db;
+  font-size: 0.9em;
+  opacity: 1;
+  z-index: 1;
+}
+
+.image_display button:hover{
+  background-color: #8d5b4c;
+  border: 1px solid #8d5b4c;
+  cursor: pointer;
+}
+
+.quotes-wrapper {
+  grid-area: quote;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: antiquewhite;
-}
-
-.alum_quote { 
-  grid-area: alum; 
-  border-right: 0.5px solid black;
-}
-
-.student_quote {
-  grid-area: student;
-  border-right: 0.5px solid black;
-}  
-
-.member_quote { 
-  grid-area: member; 
-} 
-
-.quotes {
+  text-align: center;
   width: 100%;
-  padding-top: 7%;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+}
+.quotes {
+  max-width: 80%;
+  text-align: center;
 }
 
-figcaption {
-  padding-top: 4%;
-  padding-left: 70%;
-  font-size: 0.9em;
+.quote-text {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.quote-source {
+  font-size: 1.2em;
+  font-family: Georgia, serif;
+  color: #666;
+  text-align: right;
+  padding-right: 10px;
 }
 
+@media all and (max-width: 665px) {
+  .quotes {
+    max-width: 90%;
+    text-align: center;
+  }
 
-/* Stack the layout on small devices/viewports. */
-@media all and (max-width: 575px) {
-  body { 
-    grid-template-areas: 
-      "header"
-      "image"
-      "alum"
-      "student"
-      "member"
-      "footer";
-    grid-template-rows: 10vh 50vh 20vh 20vh 20vh 10vh;  
-    grid-template-columns: 1fr;
- }
-}
-.grid { 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 1px;
-  align-items: start;
-  justify-items: center;
-  margin: auto;
-  width: 504px;
+  .quote-text {
+    font-size: 1.3em;
+  }
+  .quote-source {
+    font-size: 1em;
+  }
+  
 }
 
-.grid img {
-  max-width: 100%;
+@media all and (max-width: 460px) {
+  .quotes {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .quote-text {
+    font-size: 1.2em;
+  }
+  .quote-source {
+    font-size: 0.9em;
+  }
 }
 
-.grid img:nth-child(2) {
-  grid-column: span 3;
-  grid-row: span 4;
+@media all and (max-width: 420px) {
+  .image_display h2 {
+    font-size: 3em;
+  }
+  
+}
+
+@media all and (max-width: 375px) {
+  .quote-text {
+    font-size: 1em;
+  }
+  .quote-source {
+    font-size: 0.9em;
+  }
 
 }
 
-.alum_quote, .student_quote {
-  border-bottom: 0.2px solid black;;
+@media all and (max-width: 280px) {
+  body {
+    grid-template-rows: 12vh 80vh 55vh 12vh;  
+  }
 }
-
   
