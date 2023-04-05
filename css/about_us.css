@@ -1,14 +1,18 @@
 body { 
   display: grid;
   grid-template-areas: 
-    "header header header"
-    "about image image"
-    "logo logo logo"
-    "footer footer footer";
+    "header header"
+    "about image"
+    "logo logo"
+    "footer footer";
   grid-template-rows: 12vh 58vh 18vh 12vh;  
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
 }  
+
+.header {
+  grid-area: header;
+}
 
 .image_display { 
   grid-area: image;    
@@ -75,6 +79,10 @@ body {
   border: 5px solid black;
   background-color: white;
   
+}
+
+.footer {
+  grid-area: footer;
 }
 
 /* Stack the layout on small devices/viewports. */
