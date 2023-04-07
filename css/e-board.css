@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: grid;
     grid-template-areas: 
@@ -19,154 +25,67 @@ body {
 }
 
 .board{
+    font-size: 10px;
+    padding: 50px;
     display: flex;
-    flex-direction: row;    
-    align-items: center;
-    justify-content: center;
 }
 
-.e-info {
-    background-color: transparent;
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.card{
     width: 300px;
-    height: 500px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    margin: 50px;
-    text-align: center;
-}
-  
-  /* This container is needed to position the front and back side */
-  .inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .e-info:hover .inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .back {
-    background-color: gray;
-    color: white;
-    transform: rotateY(180deg);
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: grid;
-    grid-template-areas: 
-        "header header header"
-        "e-info1 e-info1 e-info1"
-        "e-info2 e-info2 e-info2"
-        "e-info3 e-info3 e-info3"
-        "footer footer footer";
-    grid-template-rows: 10vh 27vh 27vh 27vh 10vh;  
-    grid-template-columns: repeat(3, 1fr);
-    height: 100vh;
-    margin: 0;
-}
-
-.e-info1{
-    grid-area: e-info1;
-    display: flex;
-    flex-direction: row;
-    background-color: antiquewhite;
-    border-bottom: 1px solid black;
-    width: 100vw;
-
-}
-
-.e-info2{
-    grid-area: e-info2;
-    display: flex;
-    flex-direction: row;
-    background-color: antiquewhite;
-    border-bottom: 1px solid black;
     justify-content: center;
-    width: 100vw;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0.2,0.2,0.2,0.3);
+    border-radius: 2%;
 }
 
-.e-info3{
-    grid-area: e-info3;
-    display: flex;
-    flex-direction: row;
-    background-color: antiquewhite;
-    border-bottom: 1px solid black;
-    width: 100vw;
-
-
+.backgroundImg{
+    width: 100%;
+    object-fit: cover;
 }
 
-.e-info1 p, .e-info2 p, .e-info3 p{
-    padding-top: 5px;
-    font-size: 25px;
-    padding-bottom: 10px;
-    color: black;
+.pfp{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 10px solid white;
 }
 
-.title{
-    font-weight: bold;
-    margin-left: 100px;
+.card h1{
+    font-size: x-large;
 }
 
-.answers{
-    margin-left: 30px;
+.card h2{
+    font-size: large;
+    margin: 5px;
 }
 
-.answers img{
-    padding-bottom: 30px;
-    margin-left: 10px;
+.card p{
+    font-size: medium;
+    text-align: center;
+    margin: 5px;
 }
 
-.boardsocial{
-    display: flex;
-    flex-direction: row;
+ul{
+    padding-top: 25px;
 }
 
-.sabapic{
-    grid-area: e-info1;
-    margin-left: 500px;
-    border-style:inset;
-    box-shadow: 2px 2px 5px black;
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
 }
-
-.dianarapic{
-    grid-area: e-info3;
-    margin-left: 470px;
-    border-style:inset;
-    box-shadow: 2px 2px 5px black;
-}
-
-.mayadapic{
-    grid-area: e-info2;
-    margin-right: 350px;
-    border-style:inset;
-    box-shadow: 2px 2px 5px black;
-} */
