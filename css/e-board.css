@@ -14,6 +14,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     height: 100vh;
     margin: 0;
+    
 }
 
 .header {
@@ -24,7 +25,87 @@ body {
     grid-area: footer;
 }
 
-.board{
+.container{
+    width: 350px;
+    height: 500px;
+    perspective: 700px;
+    display: flex;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    border-radius: 2%;
+}
+
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50,50,50,0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: antiquewhite;
+}
+
+.back{
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.backgroundImg{
+    width: 100vw;
+    object-fit: cover;
+}
+
+.pfp{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 10px solid white;
+}
+
+.card h1{
+    font-size: x-large;
+}
+
+.card h2{
+    font-size: large;
+    margin: 5px;
+}
+
+.card p{
+    font-size: medium;
+    text-align: center;
+    margin: 5px;
+}
+
+ul{
+    padding-top: 25px;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* .board{
     font-size: 10px;
     padding: 50px;
     display: flex;
@@ -88,4 +169,4 @@ ul li{
     display: inline-block;
     padding: 20px;
     border-top: 1px solid rgba(0,0,0,0.1);
-}
+} */
