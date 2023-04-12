@@ -8,13 +8,13 @@ body {
     display: grid;
     grid-template-areas: 
         "header header header"
-        "e-info e-info e-info"
+        "card card card"
         "footer footer footer";
     grid-template-rows: 12vh 76vh 12vh;  
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
     height: 100vh;
     margin: 0;
-    
 }
 
 .header {
@@ -26,19 +26,25 @@ body {
 }
 
 .container{
-    width: 350px;
+    width: 500px;
     height: 500px;
     perspective: 700px;
     display: flex;
+    flex-direction: row;
+    background-color: blue;
 }
 
 .card{
+    grid-area: card;
     width: 100%;
     height: 100%;
     position: relative;
     transition: transform 1500ms;
     transform-style: preserve-3d;
     border-radius: 2%;
+    margin: 1rem;
+    align-items: center;
+    background-color: aqua;
 }
 
 .container:hover > .card{
@@ -63,7 +69,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
 }
 
 .front .backgroundImage{
@@ -86,6 +91,7 @@ body {
 .container{
     margin-left: 100px;
     margin-top: 20px;
+    width: 100%;
 }
 
 .card h1{
@@ -104,7 +110,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 20px;
 }
 
 ul{
@@ -116,71 +122,5 @@ ul li{
     display: inline-block;
     padding: 20px;
     border-top: 1px solid rgba(0,0,0,0.1);
+    margin-top: 20px;
 }
-
-
-/* .board{
-    font-size: 10px;
-    padding: 50px;
-    display: flex;
-}
-
-.card-wrapper{
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    padding: 80px;
-}
-
-.card{
-    width: 300px;
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    box-shadow: 2px 2px 2px 2px rgba(0.2,0.2,0.2,0.3);
-    border-radius: 2%;
-}
-
-.backgroundImg{
-    width: 100%;
-    object-fit: cover;
-}
-
-.pfp{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: -100px;
-    border: 10px solid white;
-}
-
-.card h1{
-    font-size: x-large;
-}
-
-.card h2{
-    font-size: large;
-    margin: 5px;
-}
-
-.card p{
-    font-size: medium;
-    text-align: center;
-    margin: 5px;
-}
-
-ul{
-    padding-top: 25px;
-}
-
-ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 20px;
-    border-top: 1px solid rgba(0,0,0,0.1);
-} */
