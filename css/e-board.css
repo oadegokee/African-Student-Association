@@ -54,6 +54,7 @@ body {
     position: absolute;
     backface-visibility: hidden;
     background-color: antiquewhite;
+    text-align: center;
 }
 
 .back{
@@ -65,33 +66,45 @@ body {
     gap: 5rem;
 }
 
-.backgroundImg{
-    width: 100vw;
+.front .backgroundImage{
     object-fit: cover;
+    width: 100%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
 }
 
 .pfp{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     margin-top: -100px;
     border: 10px solid white;
+    align-items: center;
+}
+
+.container{
+    margin-left: 100px;
+    margin-top: 20px;
 }
 
 .card h1{
-    font-size: x-large;
+    font-size: xx-large;
+    margin-top: 30px;
 }
 
 .card h2{
-    font-size: large;
+    font-size: x-large;
     margin: 5px;
 }
 
 .card p{
-    font-size: medium;
+    font-size: x-large;
     text-align: center;
-    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 ul{
@@ -104,6 +117,7 @@ ul li{
     padding: 20px;
     border-top: 1px solid rgba(0,0,0,0.1);
 }
+
 
 /* .board{
     font-size: 10px;
