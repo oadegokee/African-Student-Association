@@ -14,7 +14,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 50px;
     height: 100vh;
-    margin: 0;
 }
 
 .header {
@@ -26,8 +25,9 @@ body {
 }
 
 .container{
-    width: 500px;
-    height: 500px;
+    grid-area: card;
+    width: 50vw;
+    height: 70vh;
     perspective: 700px;
     display: flex;
     flex-direction: row;
@@ -35,8 +35,7 @@ body {
 }
 
 .card{
-    grid-area: card;
-    width: 100%;
+    width: 70vw;
     height: 100%;
     position: relative;
     transition: transform 1500ms;
