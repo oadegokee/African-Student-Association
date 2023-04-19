@@ -1,0 +1,40 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "title"
+      "funFacts"
+      "footer";
+    grid-template-rows: 12vh 15vh auto 12vh;  
+    width: 100vw;
+    /* grid-template-columns: 1fr; */
+  }  
+
+  .title {
+
+  }
+
+  .title h1 {
+    font-family: 'Apple Chancery', cursive;
+    font-size: 5em;
+    text-align: center;
+    color: #9a7b4f;
+  }
+
+  .funFacts {
+    width: 100%;
+    display: grid;
+    grid-template-rows:  repeat(6, 40vh);
+    row-gap: 1em;
+  }
+
+  .facts {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80vw auto;
+  }
+
+  .facts img {
+    width: 200px;
+    height: 200px;
+  }
