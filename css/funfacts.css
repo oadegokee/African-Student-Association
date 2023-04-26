@@ -7,11 +7,6 @@ body {
       "footer";
     grid-template-rows: 12vh 15vh auto 12vh;  
     width: 100vw;
-    /* grid-template-columns: 1fr; */
-  }  
-
-  .title {
-
   }
 
   .title h1 {
@@ -24,17 +19,37 @@ body {
   .funFacts {
     width: 100%;
     display: grid;
-    grid-template-rows:  repeat(6, 40vh);
+    grid-template-rows:  repeat(6, 30vh);
     row-gap: 1em;
+    justify-content: center;
   }
 
   .facts {
-    width: 100%;
     display: grid;
     grid-template-columns: 80vw auto;
+    background-color: antiquewhite;
+    border-radius: 30px;
   }
 
   .facts img {
     width: 200px;
     height: 200px;
+    margin: 10px;
+  }
+
+  .fact {
+    margin: 20px;
+  }
+
+  .fact h3 {
+    font-size: 2em;
+  }
+
+  .fact p {
+    font-size: 1.3em;
+    margin-top: 20px;
+  }
+
+  .footer {
+    margin-top: 1em;
   }
