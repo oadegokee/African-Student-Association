@@ -9,40 +9,58 @@ body {
     grid-template-areas: 
         "header"
         "intro"
-        "container"
+        "timeline"
         "outro"
         "footer";
-    grid-template-rows: 10vh 70vh 12vh;  
-    grid-template-columns: 3fr;
-    height: 92vh;
-}
-
-.intro{
-    background-color: aquamarine;
-    height: 100px;
-    padding: 10px;
-    /* margin-bottom: 100px; */
-    font-size: 20px;
-}
-
-.outro{
-    font-size: 20px;
-    padding: 10px;
-    background-color: blue;
-    margin-bottom: 20px;
-}
-
-.timeline{
-    position: relative;
-    max-width: 1200px;
-    margin: 20px;
-    margin-top: -500px;
-    /* background-color: aqua; */
+    grid-template-rows: 10vh 20vh auto 25vh 10vh;  
+    height: 205vh;
     overflow: scroll;
 }
 
+.header {
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.intro{
+    grid-area: intro;
+    /* background-color: aquamarine; */
+    height: 100%;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid antiquewhite;
+}
+
+.outro{
+    grid-area: outro;
+    font-size: 20px;
+    padding: 10px;
+    /* background-color: blue; */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid antiquewhite
+}
+
+.timeline{
+    grid-area: timeline;
+    margin-top: 50px;
+    /* background-color: aqua; */
+    /* position: relative;
+    max-width: 1200px;
+    margin: 20px;
+    margin-top: -500px;
+    overflow: scroll; */
+}
+
 .container{
-    grid-area: container;
     padding: 10px 50px;
     position: relative;
     width: 50%;
@@ -84,9 +102,9 @@ body {
     content: '';
     position: absolute;
     width: 6px;
-    height: 240%;
+    height: 100vh;
     background: #964;
-    top: 35px;
+    top: 350px;
     left: 50%;
     margin-left: -3px;
     z-index: -1;
@@ -124,4 +142,147 @@ body {
     border-bottom: 15px solid transparent;
     border-right: 15px solid antiquewhite;
     left: -15px;
+}
+
+@media all and (max-width:1500px) {
+    .timeline::after{
+        height: 100vh;
+        top: 350px;
+    }
+
+    .textbox{
+        padding: 15px;
+    }
+}
+
+@media all and (max-width:1300px) {
+    .timeline::after{
+        height: 95vh;
+        top: 350px;
+    }
+
+    .textbox{
+        padding: 15px;
+    }
+}
+
+@media all and (max-width:1200px) {
+    .timeline::after{
+        height: 110vh;
+        top: 330px;
+    }
+
+    .textbox{
+        padding: 15px;
+    }
+}
+
+@media all and (max-width:1100px) {
+    .timeline::after{
+        height: 120vh;
+        top: 330px;
+    }
+
+    .textbox{
+        padding: 15px;
+    }
+}
+
+@media all and (max-width:1000px) {
+    .timeline::after{
+        height: 130vh;
+        top: 320px;
+    }
+
+    .intro{
+        padding-top: 40px;
+    }
+
+    .textbox{
+        padding: 15px;
+    }
+
+    .timeline{
+        padding-bottom: 20px;
+    }
+
+    body{
+        grid-template-rows: 10vh 22vh auto 17vh 10vh;  
+    }
+}
+
+@media all and (max-width: 900px) {
+    .timeline::after{
+        height: 145vh;
+        top: 320px;
+    }
+
+    .intro{
+        padding-top: 40px;
+    }
+
+    .timeline{
+        padding-bottom: 20px;
+    }
+
+    body{
+        grid-template-rows: 10vh 22vh auto 20vh 10vh;  
+    }
+}
+
+@media all and (max-width: 800px) {
+    .timeline::after{
+        height: 145vh;
+        top: 305px;
+    }
+    .textbox{
+        padding: 15px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .timeline::after{
+        height: 185vh;
+        top: 310px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .timeline::after{
+        height: 225vh;
+        top: 330px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .timeline::after{
+        height: 225vh;
+        top: 330px;
+    }
+    .textbox{
+        padding: 10px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .timeline::after{
+        height: 310vh;
+        top: 340px;
+    }
+
+    .textbox{
+        padding: 5px;
+    }
+
+    .intro{
+        padding-top: 20px;
+    }
+
+    .outro{
+        padding-top: 20px;
+    }
+
+    body{
+        grid-template-rows: 10vh 22vh auto 25vh 10vh;  
+    }
 }
