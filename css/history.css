@@ -144,17 +144,6 @@ body {
     left: -15px;
 }
 
-@media all and (max-width:1500px) {
-    .timeline::after{
-        height: 100vh;
-        top: 350px;
-    }
-
-    .textbox{
-        padding: 15px;
-    }
-}
-
 @media all and (max-width:1300px) {
     .timeline::after{
         height: 95vh;

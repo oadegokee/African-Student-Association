@@ -8,9 +8,9 @@ body {
     display: grid;
     grid-template-areas: 
         "header header header"
-        "card card card"
+        "card-1 card-2 card-3"
         "footer footer footer";
-    grid-template-rows: 12vh 76vh 12vh;  
+    grid-template-rows: 12vh auto 12vh;  
     grid-template-columns: repeat(3, 1fr);
     height: 100vh;
 }
@@ -24,14 +24,14 @@ body {
 }
 
 .container{
-    grid-area: card;
     height: 70vh;
     perspective: 700px;
     display: flex;
     flex-direction: row;
 }
 
-.card{
+.card-1{
+    grid-area: card-1;
     width: 25vw;
     height: 90%;
     position: relative;
@@ -43,7 +43,43 @@ body {
     margin: 30px;
 }
 
-.card:hover{
+.card-1:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card-2{
+    grid-area: card-2;
+    width: 25vw;
+    height: 90%;
+    position: relative;
+    transition: transform 1200ms;
+    transform-style: preserve-3d;
+    border-radius: 2%;
+    margin: 1rem;
+    align-items: center;
+    margin: 30px;
+}
+
+.card-2:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card-3{
+    grid-area: card-3;
+    width: 25vw;
+    height: 90%;
+    position: relative;
+    transition: transform 1200ms;
+    transform-style: preserve-3d;
+    border-radius: 2%;
+    margin: 1rem;
+    align-items: center;
+    margin: 30px;
+}
+
+.card-3:hover{
     cursor: pointer;
     transform: rotateY(180deg);
 }
@@ -90,17 +126,17 @@ body {
     width: 100%;
 }
 
-.card h1{
+.card-1 h1, .card-2 h1, .card-3 h1{
     font-size: xx-large;
     margin-top: 30px;
 }
 
-.card h2{
+.card-1 h2, .card-2 h2, .card-3 h2{
     font-size: x-large;
     margin: 5px;
 }
 
-.card p{
+.card-1 p, .card-2 p, .card-3 p{
     font-size: x-large;
     text-align: center;
     display: flex;
@@ -119,4 +155,26 @@ ul li{
     padding: 20px;
     border-top: 1px solid rgba(0,0,0,0.1);
     margin-top: 20px;
+}
+
+@media all and (max-width:1200px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "card-1 card-2"
+        "card-3 card-3"
+        "footer footer";
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: 12vh auto 12vh;   */
+        /* height: 80vh; */
+        overflow: scroll;
+    }
+
+    .container{
+        height: 70vh;
+        perspective: 700px;
+        display: flex;
+        /* flex-direction: row; */
+    }
 }
