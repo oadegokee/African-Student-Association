@@ -1,0 +1,72 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "meeting"
+      "footer";
+    grid-template-rows: 12vh 76vh 12vh;  
+    grid-template-columns: 1fr;
+  }  
+
+#meetingInfo {
+  margin: 0 auto;
+  font-size: 1.5em;
+  line-height: 1.5;
+  width: 90%;
+  align-items: center;
+}
+
+#meetingInfo h1 {
+    margin-top: 15px;
+}
+
+#meetingInfo h1, #purpose, #goal {
+    margin-bottom: 20px;
+}
+
+#meetingInfo h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#info {
+    margin-left: 40px;
+}
+
+#info li {
+    margin-bottom: 10px;
+}
+
+#contact p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#contact a {
+  background-color: #8d5b4c;
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+@media all and (max-width: 1280px) {
+    body { 
+        grid-template-rows: 12vh auto 12vh;  
+      }  
+  
+      #contact {
+          margin-bottom: 30px;
+      }
+}
+
+@media (min-height: 1368px) and (max-height: 1368px) and (min-width: 912px) and (max-width: 912px) {
+    body { 
+        grid-template-rows: 12vh 76vh 12vh;  
+        font-size: 1.15em;
+    }  
+  
+}
+
+
+
