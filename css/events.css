@@ -1,22 +1,27 @@
 body,html{
     background-color: #f8f8f8;
+    min-width: 1000px;
+    min-height:800px;
     width: 100%;
     margin:0px;
-    height:100vh;
+    height:100%;
     box-sizing: border-box;
     overflow:scroll;
 }
 
+
 .container{
     margin: 0;
     box-sizing: border-box;
-    height:100vh;
+    height:100%;
     display: grid;
     grid-template-areas: 'header'
-                         'two'
+                          'two'
                           'footer';
-    grid-template-rows: 12vh 76vh 12vh;
+    grid-template-rows: 12% 76%  12%;
+
 }
+
 
 .two{
     height: 100%;
