@@ -142,8 +142,19 @@ body {
 
 @media all and (max-width:1300px) {
     .timeline::after{
-        height: 90vh;
-        top: 385px;
+        height: 140vh;
+        top: 300px;
+    }
+
+    .textbox{
+        padding: 15px;
+    }
+}
+
+@media all and (max-width:1250px) {
+    .timeline::after{
+        height: 150vh;
+        top: 300px;
     }
 
     .textbox{
@@ -153,8 +164,8 @@ body {
 
 @media all and (max-width:1200px) {
     .timeline::after{
-        height: 105vh;
-        top: 365px;
+        height: 150vh;
+        top: 300px;
     }
 
     .textbox{
@@ -164,8 +175,8 @@ body {
 
 @media all and (max-width:1100px) {
     .timeline::after{
-        height: 120vh;
-        top: 335px;
+        height: 160vh;
+        top: 300px;
     }
 
     .textbox{
@@ -175,8 +186,8 @@ body {
 
 @media all and (max-width:1000px) {
     .timeline::after{
-        height: 135vh;
-        top: 320px;
+        height: 165vh;
+        top: 300px;
     }
 
     .intro{
@@ -196,10 +207,17 @@ body {
     }
 }
 
+@media all and (max-width:950px) {
+    .timeline::after{
+        height: 175vh;
+        top: 300px;
+    }
+}
+
 @media all and (max-width: 900px) {
     .timeline::after{
-        height: 143vh;
-        top: 320px;
+        height: 175vh;
+        top: 300px;
     }
 
     .intro{
@@ -215,27 +233,67 @@ body {
     }
 }
 
+@media all and (max-width: 850px) {
+    .timeline::after{
+        height: 190vh;
+        top: 300px;
+    }
+}
+
 @media all and (max-width: 800px) {
     .timeline::after{
-        height: 160vh;
-        top: 325px;
+        height: 200vh;
+        top: 300px;
     }
     .textbox{
         padding: 15px;
     }
 }
 
+@media all and (max-width: 750px) {
+    .timeline::after{
+        height: 210vh;
+        top: 300px;
+    }
+}
+
 @media all and (max-width: 700px) {
     .timeline::after{
-        height: 180vh;
-        top: 320px;
+        height: 220vh;
+        top: 300px;
+    }
+}
+
+@media all and (max-width: 660px) {
+    .timeline::after{
+        height: 235vh;
+        top: 300px;
     }
 }
 
 @media all and (max-width: 600px) {
     .timeline::after{
-        height: 218vh;
-        top: 330px;
+        height: 270vh;
+        top: 300px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .timeline::after{
+        height: 290vh;
+        top: 300px;
+    }
+    .textbox{
+        padding: 10px;
+    }
+
+    .intro{
+        padding-top: 0px;
+    }
+
+    body{
+        grid-template-rows: 12vh 20vh auto 27vh 12vh;  
+        height: 183vh;
     }
 }
 
