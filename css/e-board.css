@@ -150,13 +150,21 @@ li a img{
 }
 
 @media all and (max-width:5000px) { 
-    .card-1, .card-2{
-        height: 90%;
+    .card-1, .card-2, .card-3{
+        height: 92%;
+        width: 23vw;
     }
     
+    .card-1{
+        padding-left: 20px;
+    }
+
+    .card-1:hover{
+        padding-left: 0px;
+    }
+
     .card-3{
-        height: 90%;
-        padding-left: 30px;
+        padding-left: 40px;
     }
 
     .back p{
@@ -169,7 +177,7 @@ li a img{
     
     .title-font{
         font-weight: bold;
-        font-size: 25px;
+        font-size: 35px;
         margin-top: 50px;
     }
     
