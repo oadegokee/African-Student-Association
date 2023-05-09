@@ -19,9 +19,18 @@ if($response) {
   var quote = document.querySelector('.quotes');
 
   function displayQuote() {
-    quote.innerHTML = '<blockquote class="quote-text">' + '"' + quotes[index]['quote'] + '"' +'</blockquote>';
-    index++;
+    quote.style.opacity = 0;
+    setTimeout(() => {
+      quote.innerHTML = '<blockquote class="quote-text">' + '"' + quotes[index]['quote'] + '"' +'</blockquote>';
+      quote.style.opacity = 1;
+    }, 500);
 
+    setTimeout(() => {
+      quote.style.opacity = 0;
+    }, 9000);
+
+    index++;
+    
     if (index >= quotes.length) {
       index = 0;
     }
