@@ -22,13 +22,13 @@
     border-radius: 20px;
   }
 
-  #title, #rich, #twin, #hottest {
+  #title {
     background: url("../images/pattern.jpeg") ;  
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  #sahara, #kilimanjaro, #languages{
+  #kilimanjaro, .one, #sahara, .two {
     background-color: rgb(227, 220, 207);
   }
 
@@ -39,6 +39,53 @@
 
   #title p {
     font-size: 1.4em;
+  }
+
+  #kilimanjaro {
+    display: grid;
+    font-size: 1.3em;
+    row-gap: 20px;
+  }
+
+  #kiliImages {
+    display: flex;
+    flex-wrap: wrap;
+   
+  }
+  #kilimanjaro img {
+    width: 33.33%;
+    height: 100%;
+    padding-right: 10px;
+  }
+
+  .one h3 {
+    margin-bottom: 2%;
+    font-size: 2em;
+  }
+
+  .one p {
+    font-size: 1.4em;
+    
+  }
+
+  .two h3 {
+    font-size: 1.9em;
+    margin-bottom: 1.5%;
+  }
+
+  #two-facts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #two-facts div {
+    font-size: 1.3em;
+    line-height: 1.5;
+    width: 90%;
+    height: 100%;
+    background-color: rgb(206, 197, 179);
+    padding: 20px;
+    border-radius: 2%;
   }
 
   #sahara {
@@ -68,92 +115,6 @@
   .sahara-facts h4 {
     margin-bottom: 10px;
     font-size: 1.2em;
-  }
-
-  #rich h3 {
-    font-size: 1.9em;
-    margin-bottom: 20px;
-  }
-
-  #rich p {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-
-  #rich ul li {
-    font-size: 1.3em;
-    margin-left: 20px;
-    padding: 8px;
-  }
-
-  #languages h3 {
-    font-size: 1.9em;
-    margin-bottom: 1.5%;
-  }
-
-  #languages-facts {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  #languages-facts div {
-    font-size: 1.3em;
-    line-height: 1.5;
-    width: 90%;
-    height: 100%;
-    background-color: rgb(206, 197, 179);
-    padding: 20px;
-    border-radius: 2%;
-  }
-
-  #twin h3 {
-    margin-bottom: 2%;
-    font-size: 2em;
-  }
-
-  #twin p {
-    font-size: 1.4em;
-    
-  }
-
-  #kilimanjaro {
-    display: grid;
-    font-size: 1.3em;
-    row-gap: 20px;
-  }
-
-  #kiliImages {
-    display: flex;
-    flex-wrap: wrap;
-   
-  }
-  #kilimanjaro img {
-    width: 33.33%;
-    height: 100%;
-    padding-right: 10px;
-  }
-
-  #hottest h3 {
-    font-size: 1.9em;
-    margin-bottom: 2%;
-  }
-
-  #hottest-facts {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 4%;
-  }
-
-  #hottest-facts div {
-    font-size: 1.3em;
-    line-height: 1.5;
-    width: 90%;
-    height: 100%;
-    /* background-color: rgb(227, 220, 207); */
-    background-color: rgb(221, 213, 200);
-    padding: 20px;
-    border-radius: 2%;
   }
 
   @media all and (min-width: 1024px) {
@@ -214,33 +175,17 @@
       padding-bottom: 5px;
     }
 
-    #hottest h3 {
-      font-size: 1.8em;
-    }
-  
-    #hottest-facts {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
-      height: 50%;
-      row-gap: 2%;
-    }
-  
-    #hottest-facts div {
-      font-size: 1.3em;
-      width: 100%;
-    }
   }
 
   @media all and (max-width: 580px) {
-    #languages-facts {
+    #two-facts {
       display: grid;
       grid-template-rows: repeat(2, 1fr);
       grid-template-columns: 1fr;
       row-gap: 10px;
     }
   
-    #languages-facts div {
+    #two-facts div {
       width: 100%;
     }
   
