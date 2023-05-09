@@ -149,6 +149,43 @@ li a img{
     width: 50px;
 }
 
+@media all and (max-width:5000px) { 
+    .card-1, .card-2{
+        height: 90%;
+    }
+    
+    .card-3{
+        height: 90%;
+        padding-left: 30px;
+    }
+
+    .back p{
+        font-size: 25px;
+    }
+
+    .position-font{
+        font-size: 20px;
+    }
+    
+    .title-font{
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    
+    ul{
+        padding-top: 0px;
+    }
+    
+    ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+}
+
 @media all and (max-width:1100px) { 
     .card-1, .card-2{
         height: 80%;

@@ -140,6 +140,28 @@ body {
     left: -15px;
 }
 
+@media all and (max-width:1500px) {
+    .timeline::after{
+        height: 120vh;
+        top: 300px;
+    }
+
+    .textbox{
+        padding: 15px;
+    }
+}
+
+@media all and (max-width:1400px) {
+    .timeline::after{
+        height: 130vh;
+        top: 300px;
+    }
+
+    .textbox{
+        padding: 15px;
+    }
+}
+
 @media all and (max-width:1300px) {
     .timeline::after{
         height: 140vh;
@@ -319,6 +341,29 @@ body {
 @media all and (max-width: 400px) {
     .timeline::after{
         height: 365vh;
+        top: 340px;
+    }
+
+    .textbox{
+        padding: 5px;
+    }
+
+    .intro{
+        padding-top: 20px;
+    }
+
+    .outro{
+        padding-top: 20px;
+    }
+
+    body{
+        grid-template-rows: 10vh 22vh auto 25vh 10vh;  
+    }
+}
+
+@media all and (max-width: 300px) {
+    .timeline::after{
+        height: 385vh;
         top: 340px;
     }
 
