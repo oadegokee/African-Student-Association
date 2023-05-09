@@ -3,11 +3,12 @@ body {
   grid-template-areas: 
     "header header"
     "about image"
-    "logo logo"
+    "other other"
     "footer footer";
-  grid-template-rows: 12vh 58vh 18vh 12vh;  
+  grid-template-rows: 12vh 58vh 20vh 12vh;  
   grid-template-columns: 1fr 1fr;
   height: 100vh;
+  row-gap: 2px;
 }  
 
 .header {
@@ -53,16 +54,16 @@ body {
   font-size: large;
 }
 
-.logo_display {
+/* .logo_display {
   grid-area: logo;
   border-top: 10px solid black;
   border-bottom: 10px solid black;
   background-color: antiquewhite;
   text-align: center;
 
-}
+} */
 
-.logo_display img {
+/* .logo_display img {
   display: inline-block;
   margin-left: 300px;
   margin-right: 300px;
@@ -79,6 +80,45 @@ body {
   border: 5px solid black;
   background-color: white;
   
+} */
+
+/* .otherPages{
+  grid-area: other;
+  background-color: antiquewhite;
+}
+
+.otherPages h4 {
+  font-size: 2em;
+  
+} */
+
+.links {
+  grid-area: other;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  /* background-color: antiquewhite; */
+  height: 100%;
+  text-align: center;
+  column-gap: 2px
+
+}
+
+.links a {
+  padding: 20px;
+  font-size: 2em;
+  color: black;
+  height: 100%;
+  font-weight: bold;
+}
+
+.links a:hover {
+  color: #8d5b4c;
+ 
+ 
 }
 
 .footer {
