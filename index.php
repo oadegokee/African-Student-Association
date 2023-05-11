@@ -26,7 +26,6 @@
         </a>
       </div>
       <ul class="nav">
-        <li><a href="upload.php">Upload</a></li>
         <li><a href="index.php">Home</a></li>
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="events.html">Events</a></li>
