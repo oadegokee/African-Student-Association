@@ -26,6 +26,7 @@
         </a>
       </div>
       <ul class="nav">
+        <li><a href="upload.php">Upload</a></li>
         <li><a href="index.php">Home</a></li>
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="events.html">Events</a></li>
@@ -38,7 +39,7 @@
   <div class="image_display">
     <div class="overlay"></div>
     <h2>African Student Association</h1>
-    <button onClick="location.href='gallery.html'"><b>Gallery</b></button>
+    <button onClick="location.href='gallery.php'"><b>Gallery</b></button>
    
   </div>
 

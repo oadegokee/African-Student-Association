@@ -105,8 +105,6 @@ body {
   }
 }
 
-
-
 @media all and (max-width: 600px) {
   .quote-text {
     font-size: 1.1em;
@@ -114,9 +112,8 @@ body {
   .quote-source {
     font-size: 0.9em;
   }
-
-  
 }
+
 @media all and (max-width: 570px) {
   .image_display h2 {
     font-size: 3.5em;
@@ -134,8 +131,6 @@ body {
   .quote-source {
     font-size: 0.9em;
   }
-
-  
 }
 
 @media all and (max-width: 375px) {
