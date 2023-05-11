@@ -29,10 +29,10 @@
 			</div>
 			<ul class="nav">
 				<li><a href="index.php">Home</a></li>
-				<li><a href="about_us.html">About Us</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
 				<li><a href="events.html">Events</a></li>
-				<li><a href="e_board.html">E-Board</a></li>
-				<li><a href="contact_us.html">Contact Us</a></li>
+				<li><a href="eboard.html">E-Board</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
 			</ul>
 		</nav>
 	</div>

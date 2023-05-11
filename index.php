@@ -22,39 +22,24 @@
 
       <div class="toggle">
         <a href="#">
-          <img src="./images/nav-icon.png" alt="nav icon" id="navIcon" width="40px" height="40px">
+          <img src="./images/nav-icon.png" alt="nav icon" id="navIcon" width="40" height="40">
         </a>
       </div>
       <ul class="nav">
         <li><a href="index.php">Home</a></li>
-        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
         <li><a href="events.html">Events</a></li>
-        <li><a href="e_board.html">E-Board</a></li>
-        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="eboard.html">E-Board</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
       </ul>
     </nav>
   </div>
 
   <div class="image_display">
     <div class="overlay"></div>
-    <h2>African Student Association</h1>
+    <h2>African Student Association</h2>
     <button onClick="location.href='gallery.php'"><b>Gallery</b></button>
-   
   </div>
-
-  <!-- <div class="quotes-wrapper">
-    <div class="quotes">
-      <blockquote class="quote-text">
-        "As an alum of the African Student Association, I can confidently say that being part of this 
-        organization was not just a means of cultural exploration, but a platform for lifelong friendships 
-        and personal growth. The ASA provided a space for us to celebrate our diverse backgrounds and to embrace 
-        the unique perspectives that we each brought to the table. Through the ASA, I not only learned about the 
-        rich history and traditions of my fellow African brothers and sisters, but also gained valuable leadership 
-        skills and a deeper understanding of the importance of community and collaboration".
-      </blockquote>
-    </div>
-  </div> -->
-
 
   <?php
     include 'quotes.php';
@@ -68,15 +53,13 @@
 
     <div id="footer_right">
       <a href="https://www.facebook.com/ASAEauClaire?mibextid=LQQJ4d " target="_blank">
-        <img src="./images/facebook_icon.png" alt="Facebook Icon" width="30px" height="30px" id="facebook_logo">
+        <img src="./images/facebook_icon.png" alt="Facebook Icon" width="30" height="30" id="facebook_logo">
       </a>
 
       <a href="https://instagram.com/uwec_asa?igshid=YmMyMTA2M2Y=" target="_blank" >
-        <img src="./images/instagram_icon.png" alt="Instagram Icon" width="30px" height="30px" id="instagram_logo">
+        <img src="./images/instagram_icon.png" alt="Instagram Icon" width="30" height="30" id="instagram_logo">
       </a>
     </div>
   </div>
-
-  <script src="./js/index.js"></script>
 </body>
 </html>
