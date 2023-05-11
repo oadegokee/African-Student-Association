@@ -133,8 +133,8 @@ diapo = {
 				}
 				if (click) {
 
-					w_target = w_origin * diapo.zoomClick;
-					h_target = h_origin * diapo.zoomClick;
+					w_target = w_origin * diapo.zoomClick-150;
+					h_target = h_origin * diapo.zoomClick-150;
 				}
 
 
