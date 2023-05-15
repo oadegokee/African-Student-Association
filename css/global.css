@@ -4,10 +4,15 @@
     padding: 0;
   }
 
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
  .header, .footer {
     background: #8d5b4c;
     overflow: scroll;
     font-size: 1em;
+    font-family: "Georgia", serif;
   }
 
   a, a:hover {
