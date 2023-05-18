@@ -1,15 +1,3 @@
-// $(function(){
-//     $(".toggle").on("click", function(){
-//         if($(".nav").hasClass("active")) {
-//             $(".nav").removeClass("active");
-//             $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>")
-//         } else {
-//             $(".nav").addClass("active");
-//             $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>")
-//         }
-//     })
-// });
-
 document.addEventListener("DOMContentLoaded", function() {
     var toggle = document.querySelector(".toggle");
     var nav = document.querySelector(".nav");

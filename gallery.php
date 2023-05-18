@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/gallery.css">
 	<script src="./js/gallery.js"></script>
 	<script src="./js/global.js"></script>
-	<title>Gallery</title>
+	<title>ASA Gallery</title>
 </head>
 
 <body>
@@ -55,28 +55,6 @@
 		<div id="caption"></div>
 	</div>
 
-	<!-- <div id="diapoContainer">
-		<img class="imgsrc" src="./images/gallery_image1.JPG">
-		<img class="imgsrc" src="./images/gallery_image2.JPG">
-		<img class="imgsrc" src="./images/gallery_image3.JPG">
-		<img class="imgsrc" src="./images/gallery_image4.JPG">
-		<img class="imgsrc" src="./images/gallery_image5.JPG">
-		<img class="imgsrc" src="./images/gallery_image6.JPG">
-		<img class="imgsrc" src="./images/gallery_image7.JPG">
-		<img class="imgsrc" src="./images/gallery_image8.JPG">
-		<img class="imgsrc" src="./images/gallery_image9.JPG">
-		<img class="imgsrc" src="./images/gallery_image10.JPG">
-		<img class="imgsrc" src="./images/gallery_image11.JPG">
-		<img class="imgsrc" src="./images/gallery_image12.JPG">
-		<img class="imgsrc" src="./images/gallery_image13.JPG">
-		<img class="imgsrc" src="./images/gallery_image14.JPG">
-		<img class="imgsrc" src="./images/gallery_image15.JPG">
-		<img class="imgsrc" src="./images/gallery_image16.JPG">
-		<img class="imgsrc" src="./images/gallery_image17.JPG">
-		<img class="imgsrc" src="./images/gallery_image18.JPG">
-		<img class="imgsrc" src="./images/gallery_image19.jpg">
-		<div id="caption"></div>
-	</div> -->
 	<script type="text/javascript">
 		function dom_onload() {
 			if (document.getElementById("diapoContainer")) diapo.init(); else setTimeout("dom_onload();", 128);

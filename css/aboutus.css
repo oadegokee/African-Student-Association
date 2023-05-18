@@ -54,44 +54,6 @@ body {
   font-size: large;
 }
 
-/* .logo_display {
-  grid-area: logo;
-  border-top: 10px solid black;
-  border-bottom: 10px solid black;
-  background-color: antiquewhite;
-  text-align: center;
-
-} */
-
-/* .logo_display img {
-  display: inline-block;
-  margin-left: 300px;
-  margin-right: 300px;
-}
-
-.logo_display img#logo_2019 {
-  border-radius: 50%;
-  border: 5px solid black;
-
-  
-}
-.logo_display img#logo_2018 {
-  border-radius: 50%;
-  border: 5px solid black;
-  background-color: white;
-  
-} */
-
-/* .otherPages{
-  grid-area: other;
-  background-color: antiquewhite;
-}
-
-.otherPages h4 {
-  font-size: 2em;
-  
-} */
-
 .links {
   grid-area: other;
   background-color: antiquewhite;
@@ -117,7 +79,6 @@ body {
 
 .links a:hover {
   color: #8d5b4c;
- 
  
 }
 

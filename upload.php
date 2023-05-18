@@ -11,7 +11,7 @@
             die("Invalid file type");
         }
 
-        $imagePath = './images/' . basename($image['name']);
+        $imagePath = 'images/' . basename($image['name']);
         if(!move_uploaded_file($image['tmp_name'], $imagePath)){
             die("Error uploading file");
         }
